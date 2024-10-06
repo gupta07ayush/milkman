@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-8=*3^ye-lead8&jq-e$6s5-7ht_&d4(w_zt8*qbalqf-00&v^q
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*','themilkstore.azurewebsites.net']
+ALLOWED_HOSTS = ['*','themilkstore.azurewebsites.net', 'milkman.azurewebsites.net']
 
 
 # Application definition
@@ -53,7 +53,7 @@ MIDDLEWARE = [
 
 CSRF_COOKIE_SECURE = True  # If using HTTPS
 SESSION_COOKIE_SECURE = True  # If using HTTPS
-CSRF_TRUSTED_ORIGINS = ['https://www.themilkstore.azurewebsites.net']
+CSRF_TRUSTED_ORIGINS = ['https://www.themilkstore.azurewebsites.net', 'https://milkman.azurewebsites.com']
 
 
 ROOT_URLCONF = 'milkecom.urls'
@@ -85,18 +85,18 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
 
         #local-
-        'NAME': 'milk_ecom',
-        'HOST':'127.0.0.1',
-        'USER':'root',
-        'PASSWORD':'root',
-        'PORT':'3306'
+        # 'NAME': 'milk_ecom',
+        # 'HOST':'127.0.0.1',
+        # 'USER':'root',
+        # 'PASSWORD':'root',
+        # 'PORT':'3306'
 
         #Cloud-
-        # 'HOST':'themilkstore-server.mysql.database.azure.com',
-        # 'PORT':'3306',
-        # 'USER':'rprjwiimyo',
-        # 'NAME': 'milk_ecom',
-        # 'PASSWORD':'admin@123'
+        'HOST':'milkman-server.mysql.database.azure.com',
+        'PORT':'3306',
+        'USER':'jzircoboaf',
+        'NAME': 'milk_ecom',
+        'PASSWORD':'NtxyXSBgc0I$a8dz'
 
     }
 }
