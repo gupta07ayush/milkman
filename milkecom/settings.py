@@ -96,7 +96,7 @@ DATABASES = {
         'PORT':'3306',
         'USER':'jzircoboaf',
         'NAME': 'milk_ecom',
-        'PASSWORD':'NtxyXSBgc0I$a8dz'
+        'PASSWORD':'admin@123'
 
     }
 }
